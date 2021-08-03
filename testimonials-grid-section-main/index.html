@@ -10,7 +10,7 @@
       href="./images/favicon-32x32.png"
     />
 
-    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="style.css" />
 
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -18,25 +18,29 @@
       rel="stylesheet"
     />
 
-    <title>Frontend Mentor | [Challenge Name Here]</title>
+    <title>Frontend Mentor | Testimonials Grid</title>
   </head>
 
   <body>
     <div class="container">
-      <div class="card card-fd-c card-violet box1">
-        <div class="avatar">
-          <img src="./images/image-daniel.jpg" class="avatar__img" alt="" />
-          <div class="">
-            <h4>Daniel Clifford</h4>
-            <p>Verified Graduate</p>
+      <div class="card bg-violet relative">
+        <div class="flex items-center">
+          <img
+            src="./images/image-daniel.jpg"
+            class="card__avatar"
+            alt="daniel"
+          />
+          <div class="card__content">
+            <p class="text-white">Daniel Clifford</p>
+            <p class="text-50">Verified Graduate</p>
           </div>
         </div>
-        <h3 class="heading">
+        <p class="review text-white">
           I received a job offer mid-course, and the subjects I learned were
           current, if not more so, in the company I joined. I honestly feel I
           got every penny’s worth.
-        </h3>
-        <p class="content">
+        </p>
+        <p class="quotation-review text-70">
           I was an EMT for many years before I joined the bootcamp. I’ve been
           looking to make a transition and have heard some people who had an
           amazing experience here. I signed up for the free intro course and
@@ -49,72 +53,82 @@
         <img
           src="./images/bg-pattern-quotation.svg"
           alt="quote"
-          class="quote"
+          class="quote absolute"
         />
       </div>
-      <div class="card card-fd-c card-blue1">
-        <div class="avatar">
-          <img src="./images/image-daniel.jpg" class="avatar__img" alt="" />
-          <div class="">
-            <h4>Jeanette Harmon</h4>
+      <div class="card bg-blue">
+        <div class="flex items-center">
+          <img
+            src="./images/image-jonathan.jpg"
+            class="card__avatar"
+            alt="jeanette"
+          />
+          <div class="card__content">
+            <p class="text-white">Jonathan Walters</p>
+            <p class="text-50">Verified Graduate</p>
+          </div>
+        </div>
+        <p class="review text-white">
+          The team was very supportive and kept me motivated
+        </p>
+        <p class="quotation-review text-70">
+          I started as a total newbie with virtually no coding skills. I now
+          work as a mobile engineer for a big company. This was one of the best
+          investments I've made in myself.
+        </p>
+      </div>
+      <div class="card bg-white">
+        <div class="flex items-center">
+          <img
+            src="./images/image-jeanette.jpg"
+            class="card__avatar"
+            alt="jeanette"
+          />
+          <div class="card__content">
+            <p>Jeanette Harmon</p>
             <p>Verified Graduate</p>
           </div>
         </div>
-        <h3 class="heading">An overall wonderful and rewarding experience</h3>
-        <p class="content"></p>
-      </div>
-      <div class="card card-fd-c box3 card-white">
-        <div class="avatar">
-          <img src="./images/image-daniel.jpg" class="avatar__img" alt="" />
-          <div class="">
-            <h4 class="heading-g-blue">Daniel Clifford</h4>
-            <p class="content-b-blue">Verified Graduate</p>
-          </div>
-        </div>
-        <h3 class="heading heading-g-blue">
-          I received a job offer mid-course, and the subjects I learned were
-          current, if not more so, in the company I joined. I honestly feel I
-          got every penny’s worth.
-        </h3>
-        <p class="content content-b-blue">
-          “ The staff seem genuinely concerned about my progress which I find
-          really refreshing. The program gave me the confidence necessary to be
-          able to go out in the world and present myself as a capable junior
-          developer. The standard is above the rest. You will get the personal
-          attention you need from an incredible community of smart and amazing
-          people. ”
+        <p class="review">An overall wonderful and rewarding experience</p>
+        <p class="quotation-review">
+          Thank you for the wonderfull experience! I now have a job I really
+          enjoy and ake a good living while doing something I love.
         </p>
       </div>
-      <div class="card card-fd-c card-white">
-        <div class="avatar">
-          <img src="./images/image-daniel.jpg" class="avatar__img" alt="" />
-          <div class="">
-            <h4 class="heading-g-blue">Patrick Abrams</h4>
-            <p class="content-b-blue">Verified Graduate</p>
+      <div class="card bg-black">
+        <div class="flex items-center">
+          <img src="./images/image-patrick.jpg" class="card__avatar" alt="" />
+          <div class="card__content">
+            <p class="text-white">Patrick Abrams</p>
+            <p class="text-50">Verified Graduate</p>
           </div>
         </div>
-        <h3 class="heading heading-g-blue">
+        <p class="review text-white">
           Awesome teaching support from TAs who did the bootcamp themselves.
           Getting guidance from them and learning from their experiences was
           easy.
-        </h3>
-        <p class="content content-b-blue">
-          “ Thank you for the wonderful experience! I now have a job I really
-          enjoy, and make a good living while doing something I love. ”
+        </p>
+        <p class="quotation-review text-70">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque
+          tempora reiciendis quisquam enim mollitia nihil, reprehenderit quam
+          explicabo iste magnam, eius natus beatae quibusdam ducimus amet
+          sapiente unde impedit incidunt eum? Rem, vel non, exercitationem
+          similique laboriosam in omnis minima quis quia nulla vitae obcaecati
+          fugiat quibusdam repellendus officia! In!
         </p>
       </div>
-      <div class="card card-fd-c box4 card-blue2">
-        <div class="avatar">
-          <img src="./images/image-daniel.jpg" class="avatar__img" alt="" />
-          <div class="">
-            <h4>Kira Whittle</h4>
-            <p>Verified Graduate</p>
+      <div class="card bg-white">
+        <div class="flex items-center">
+          <img src="./images/image-kira.jpg" class="card__avatar" alt="" />
+          <div class="card__content">
+            <p>Kira Whittle</p>
+            <p class="">Verified Graduate</p>
           </div>
         </div>
-        <h3 class="heading">
+        <p class="review">
           Such a life-changing experience. Highly recommended!
-        </h3>
-        <p class="content">
+        </p>
+        <p class="quotation-review">
           Before joining the bootcamp, I’ve never written a line of code. I
           needed some structure from professionals who can help me learn
           programming step by step. I was encouraged to enroll by a former
@@ -129,6 +143,5 @@
         </p>
       </div>
     </div>
-    Verified Graduate
   </body>
 </html>

@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+:root {
+  /* Primary */
+  --moderate-violet: hsl(263, 55%, 52%);
+  --dark-grayish-blue: hsl(217, 19%, 35%);
+  --dark-blackish-blue: hsl(219, 29%, 14%);
+  --white: #fff;
+  /* Neutral*/
+  --light-gray: hsl(0, 0%, 81%);
+  --light-grayish-blue: hsl(210, 46%，95%);
+  /* 
+	1. "Verified Graduate" has the same color as the person's name with 50% opacity
+	2. Review paragraphs inside the quotations have the same color as well, but are at 70% opacity
+   */
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+/* 
+	=============
+	global styles
+	=============
+*/
+
+html {
+  font-size: 100%;
+} /*16px*/
+
+body {
+  background: var(--light-gray);
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-weight: 400;
+  line-height: 1.75;
+  color: #000000;
+  margin: 0;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+p {
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+/* 
+	=============
+	 typography	
+	=============
+*/
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 3rem 0 1.38rem;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3.052rem;
+}
+
+h2 {
+  font-size: 2.441rem;
+}
+
+h3 {
+  font-size: 1.953rem;
+}
+
+h4 {
+  font-size: 1.563rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+small,
+.text_small {
+  font-size: 0.8rem;
+}
+
+/* layout */
+.container {
+  padding: 1rem;
+}
+
+@media screen and (min-width: 640px) {
+  .container {
+    width: 80%;
+    height: 650px;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(300px, 1fr));
+    grid-template-rows: repeat(2, minmax(300px, 1fr));
+    gap: 1rem;
+  }
+
+  .container .card {
+    margin: 0;
+  }
+  .container div:first-child {
+    grid-column: span 2;
+  }
+  .container div:last-child {
+    grid-row: 1 /3;
+    grid-column: 4/5;
+  }
+  .container div:nth-child(4) {
+    grid-column: span 2;
+  }
+}
+
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+/* card */
+.card {
+  border-radius: 14px;
+  padding: 2rem;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 2rem;
+}
+.bg-violet .review {
+  position: relative;
+  z-index: 99;
+}
+
+.card__info {
+  display: flex;
+}
+
+.card__avatar {
+  display: block;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 1px solid rgb(209, 209, 209);
+  margin-right: 15px;
+}
+
+.card__content p {
+  font-size: 0.8rem;
+  margin: 0;
+}
+.quote {
+  top: 0;
+  right: 20px;
+}
+
+.review {
+  font-size: 1.2rem;
+}
+
+.quotation-review {
+  font-size: 0.8rem;
+}
+.quotation-review::after,
+.quotation-review::before {
+  content: '"';
+}
+/* background */
+.bg-violet {
+  background-color: var(--moderate-violet);
+}
+
+.bg-white {
+  background-color: var(--white);
+}
+
+.bg-blue {
+  background-color: var(--dark-grayish-blue);
+}
+.bg-black {
+  background-color: var(--dark-blackish-blue);
+}
+
+/* text color */
+.text-white {
+  color: white;
+}
+.text-50 {
+  color: rgba(255, 255, 255, 0.5);
+}
+.text-70 {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* position */
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
