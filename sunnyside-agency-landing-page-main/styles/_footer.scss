@@ -1,0 +1,32 @@
+.footer {
+  height: 270px;
+  text-align: center;
+  background-color: #91d3c5;
+  color: $Dark-moderate-cyan;
+  padding: 2rem 0;
+  &__logo {
+    font-weight: bold;
+    color: #2e7567;
+    margin-bottom: 1.5rem;
+  }
+  &__nav {
+    a {
+      color: inherit;
+      transition: color 0.2s ease-in-out;
+      &:hover {
+        color: $white;
+      }
+      &:not(:last-child) {
+        margin-right: 2rem;
+      }
+    }
+  }
+  &__social {
+    margin-top: 3rem;
+    img {
+      &:not(:last-child) {
+        margin-right: 2rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <h1>
+      SPLI
+      <br>
+      TTER
+    </h1>
+  </div>
+  <div class="container">
+    <div class="container__left">
+
+      <label for="bill">
+        Bill
+      </label>
+      <div class="input-form">
+        <img src="./images/icon-dollar.svg" alt="dollar">
+        <input autofocus class="input" type="text" id="bill">
+      </div>
+      <label for="">Select Tip %</label>
+      <div class="grid">
+        <div class="tip">5%</div>
+        <div class="tip">10%</div>
+        <div class="tip">15%</div>
+        <div class="tip">25%</div>
+        <div class="tip">50%</div>
+        <input id="customInput" type="text">
+      </div>
+      <label for="numberOfPeople">
+        Number of People
+      </label>
+      <div class="input-form">
+        <img src="./images/icon-person.svg" alt="dollar">
+        <input class="input" type="text" id="numberOfPeople">
+      </div>
+    </div>
+    <ul class="box">
+      <li>
+        <div class="left">
+          <h3>
+            Tip Amount
+          </h3>
+          <p>
+            / person
+          </p>
+        </div>
+        <span class="right"></span>
+      </li>
+      <li>
+        <div class="left">
+          <h3>
+            Total
+          </h3>
+          <p>
+            / person
+          </p>
+        </div>
+        <span class="right"></span>
+      </li>
+      <button type="reset">reset</button>
+    </ul>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Wping</a>.
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>

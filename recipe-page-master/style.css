@@ -1,0 +1,176 @@
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local('Material Icons'), local('MaterialIcons-Regular'),
+    url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+    url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+    url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  padding: 1.1rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  font-size: 2.4rem;
+}
+p {
+  margin: 0;
+}
+@media screen and (min-width: 1200px) {
+  body {
+    padding: 52px 230px;
+  }
+}
+/* recipe title */
+.recipe__title {
+  font-size: 2.5rem;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 1rem;
+}
+@media screen and (min-width: 1200px) {
+  .recipe__title {
+    font-size: 4.8rem;
+  }
+}
+
+/* recipe description */
+
+.recipe__desc {
+  display: flex;
+  font-size: 1.4rem;
+  color: #4f4f4f;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 1.3;
+  padding-right: 0.8rem;
+}
+.recipe__desc::before {
+  display: block;
+  margin-right: 1.2rem;
+  content: url(./6dots.svg);
+}
+
+@media screen and (min-width: 1200px) {
+  .recipe__desc {
+    width: 63%;
+  }
+}
+/* recipe picture */
+
+.recipe__picture {
+  display: block;
+  width: 100%;
+  margin: 2.4rem auto;
+}
+
+@media screen and (min-width: 1200px) {
+  .recipe__picture {
+    height: 470px;
+  }
+}
+/* recipe detail */
+
+.recipe__detail {
+  display: flex;
+}
+
+.recipe__detail--text {
+  margin: 0;
+}
+.title {
+  font-family: inherit;
+  font-weight: bold;
+  color: #bdbdbd;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+}
+
+/* recipe time */
+
+.recipe__time {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.item {
+  display: flex;
+  align-items: center;
+}
+
+.material-icons {
+  font-size: 2rem;
+  padding-right: 0.7rem;
+}
+
+.material-icons.gray {
+  color: rgb(32, 32, 32);
+}
+
+/* recipe ingredients  */
+.recipe__ingredients {
+  font-family: 'Playfair Display', serif;
+}
+
+.recipe__ingredients h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.recipe__ingredients p {
+  font-size: 1.6rem;
+  font-style: italic;
+  color: #333333;
+  margin: 2rem 0;
+}
+
+.recipe__ingredients input[type='checkbox'] {
+  width: 15px;
+  height: 15px;
+}
+.recipe__ingredients label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+
+/* recipe instructions */
+.recipe__instructions {
+  font-family: 'Playfair Display', serif;
+}
+.recipe__instructions .number {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  line-height: 1.4;
+}
+/* color */
+.orange {
+  color: #f2994a;
+}
+
+.bg-orange {
+  background-color: #f2994a;
+}
+/* typograry */
+.bolder {
+  font-weight: 500;
+  font-style: italic;
+}

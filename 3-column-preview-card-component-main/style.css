@@ -1,0 +1,108 @@
+:root {
+  /* primary */
+  --bright-orange: hsl(31, 77%, 52%);
+  --Dard-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  /* neutral */
+  /* for paragraphs */
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  /* for background headings buttons */
+  --very-light-gray: hsl(0, 0%, 95%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--very-light-gray);
+  min-height: 100vh;
+}
+
+h2 {
+  font-family: "Big Shoulders Display", cursive;
+  text-transform: uppercase;
+  color: var(--very-light-gray);
+}
+p {
+  font-family: "Lexend Deca", sans-serif;
+  color: var(--transparent-white);
+}
+
+section {
+  min-width: 375px;
+  width: 48%;
+  overflow: hidden;
+  padding: 2rem;
+}
+
+@media screen and (min-width: 1440px) {
+  section {
+    width: 60%;
+    display: flex;
+  }
+}
+section div {
+  padding: 2rem;
+}
+section div:nth-child(1) {
+  background-color: var(--bright-orange);
+  border-radius: 5px 5px 0 0;
+}
+section div:nth-child(2) {
+  background-color: var(--Dard-cyan);
+}
+section div:nth-child(3) {
+  background-color: var(--very-dark-cyan);
+  border-radius: 0 0 5px 5px;
+}
+
+@media screen and (min-width: 1440px) {
+  .c1 {
+    border-radius: 5px 0 0 5px;
+  }
+  .c3 {
+    border-radius: 0 5px 5px 0;
+  }
+}
+section div img {
+  width: 40px;
+  margin-bottom: 1rem;
+}
+section div h2 {
+  margin-bottom: 1rem;
+}
+section div p {
+  line-height: 1.5;
+  font-size: 15px;
+  margin-bottom: 1.3rem;
+}
+
+section div button {
+  font-family: "Lexend Deca", sans-serif;
+  cursor: pointer;
+  border: none;
+  background-color: var(--very-light-gray);
+  padding: 0.8rem 1.3rem;
+  border-radius: 35px;
+}
+section div button:hover {
+  background-color: rgb(235, 235, 235);
+}
+section div button:focus {
+  outline: none;
+}
+section div:nth-child(1) button {
+  color: var(--bright-orange);
+}
+section div:nth-child(2) button {
+  color: var(--Dard-cyan);
+}
+section div:nth-child(3) button {
+  color: var(--very-dark-cyan);
+}
