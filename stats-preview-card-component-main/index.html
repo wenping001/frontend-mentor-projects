@@ -1,59 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Stats preview card component</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
-  <link rel="stylesheet" href="style.css">
-  <title>Frontend Mentor | Stats preview card component</title>
-
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
-</head>
-
-<body>
-
-  <div class="container">
-    <div class="post">
-      <div class="post__foreground"></div>
+  <body>
+    <div class="container">
+      <div class="post"></div>
+      <main class="content">
+        <h1 class="content__title">
+          Get
+          <span class="highlight">insights</span>
+          that help your business grow.
+        </h1>
+        <p class="content__para">
+          Discover the benefits of data analytics and make better decisions
+          regarding revenue, customer experience, and overall efficiency.
+        </p>
+        <div class="list">
+          <div class="item">
+            <h2>10k+</h2>
+            <p>companies</p>
+          </div>
+          <div class="item">
+            <h2>314</h2>
+            <p>templates</p>
+          </div>
+          <div class="item">
+            <h2>12M+</h2>
+            <p>queries</p>
+          </div>
+        </div>
+      </main>
     </div>
-    <main class="content">
-      <h1 class="content__title">
-        Get
-        <span class="highlight">insights</span>
-        that help your business grow.
-      </h1>
-      <p class="content__para">
-        Discover the benefits of data analytics and make better decisions regarding revenue, customer
-        experience, and overall efficiency.
-      </p>
-      <div class="datas">
-        <div class="data">
-          <h2>10k+ </h2>
-          <p>companies</p>
-        </div>
-        <div class="data">
-          <h2>314</h2>
-          <p>templates</p>
-        </div>
-        <div class="data">
-          <h2>12m+</h2>
-          <p>queries</p>
-        </div>
-      </div>
-    </main>
-  </div>
-
-</body>
-
+  </body>
 </html>
