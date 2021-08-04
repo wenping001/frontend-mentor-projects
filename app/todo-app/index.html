@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="styles/style.css">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+  <script src="app.js" defer></script>
+
+  <title>Todo app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="app">
+    <div class="app__header">
+      <h1>TODO</h1>
+      <img class="app__toggle" src="images/icon-sun.svg" />
+    </div>
+
+    <div class="app__input">
+      <button class="app__input--default">
+        +
+      </button>
+      <input type="text" id="input" placeholder="添加计划">
+    </div>
+    <div class="app__todolist">
+      <ul id="todolist">
+        <li class="todoItem border-bottom-1">
+          <div class="app__todolist--default b-1">
+            <img src="./images/icon-check.svg" alt="">
+          </div>
+          <span>fix bug</span>
+          <img class="deleteBtn" src="./images/icon-cross.svg" alt="">
+        </li>
+        <li class="todoItem border-bottom-1">
+          <div class="app__todolist--default b-1">
+            <img src="./images/icon-check.svg" alt="">
+          </div>
+          <span>fix bug</span>
+          <img class="deleteBtn" src="./images/icon-cross.svg" alt="">
+        </li>
+        <li class="todoItem border-bottom-1">
+          <div class="app__todolist--default b-1">
+            <img src="./images/icon-check.svg" alt="">
+          </div>
+          <span>fix bug</span>
+          <img class="deleteBtn" src="./images/icon-cross.svg" alt="">
+        </li>
+        <li class="todoItem border-bottom-1">
+          <div class="app__todolist--default b-1">
+            <img src="./images/icon-check.svg" alt="">
+          </div>
+          <span>fix bug</span>
+          <img class="deleteBtn" src="./images/icon-cross.svg" alt="">
+        </li>
+      </ul>
+      <!-- <div class="app__todolist--footer">
+        <span></span>
+        <div>
+          <span>All</span>
+          <span>Active</span>
+          <span>Completed</span>
+        </div>
+        <span>Clear Compeleted</span>
+      </div>
+    </div> -->
+    </div>
+
+  </div>
+
+</body>
+
+</html>

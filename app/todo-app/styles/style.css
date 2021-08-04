@@ -1,0 +1,226 @@
+/* primary */
+/* light theme */
+/* dark theme */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100;300&family=ZCOOL+XiaoWei&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("../images/bg-desktop-light.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 240px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 18px;
+}
+
+h1 {
+  font-weight: 600;
+  letter-spacing: 8px;
+  color: #fff;
+}
+
+.app {
+  width: 500px;
+}
+
+.app__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2rem 0;
+}
+
+.app__header img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.app__input {
+  width: 100%;
+  position: relative;
+}
+
+.app__input button {
+  color: #161722;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.app__input button :hover {
+  font-size: 2rem;
+}
+
+.app__input--default {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  width: 18px;
+  left: 15px;
+  height: 18px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.app__input--check {
+  border: none;
+  background-image: -webkit-gradient(linear, left top, right top, from(#57ddff), to(#c058f3));
+  background-image: linear-gradient(to right, #57ddff, #c058f3);
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.app__input input {
+  padding: 1rem 1.3rem 1rem 3rem;
+  width: 100%;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  font-family: 'ZCOOL XiaoWei', serif;
+}
+
+.app__todolist ul {
+  width: 100%;
+  height: 60vh;
+  margin-top: 1.5rem;
+  list-style-type: none;
+  background-color: white;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.app__todolist ul li {
+  padding: 1.3rem 0rem;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.app__todolist ul li span {
+  font-size: 0.75rem;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  display: inline-block;
+  margin-left: 3rem;
+  font-family: 'ZCOOL XiaoWei', serif;
+}
+
+.app__todolist ul li > img {
+  cursor: pointer;
+  position: absolute;
+  height: 13px;
+  width: 13px;
+  right: 20px;
+}
+
+.app__todolist--default {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  position: absolute;
+  left: 18px;
+  top: 18px;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.app__todolist--footer {
+  padding: 1rem 0.1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  bottom: 120px;
+  left: 600px;
+}
+
+.app__todolist--footer div {
+  margin-left: 0.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.app__todolist--footer div span {
+  color: #777a92;
+  font-size: 0.7rem;
+  display: inline-block;
+  font-weight: 700;
+  margin: 0 1rem;
+  cursor: pointer;
+}
+
+.app__todolist--footer > span {
+  font-size: 0.7rem;
+  color: #777a92;
+}
+
+.app__todolist--footer span:last-child {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .app {
+    width: 80%;
+  }
+}
+
+.b-1 {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+}
+
+.checkImage {
+  opacity: 0;
+}
+
+.border-bottom-1 {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.light-theme {
+  background-color: #fafafa;
+}
+
+.dark-theme {
+  background-color: #161722;
+}
+
+.dark-theme-check-hidden {
+  visibility: hidden;
+}
+/*# sourceMappingURL=style.css.map */

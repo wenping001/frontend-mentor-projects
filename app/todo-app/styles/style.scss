@@ -1,0 +1,195 @@
+@import 'variables';
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100;300&family=ZCOOL+XiaoWei&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url('../images/bg-desktop-light.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 240px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 18px;
+}
+
+h1 {
+  font-weight: 600;
+  letter-spacing: 8px;
+  color: #fff;
+}
+
+.app {
+  width: 500px;
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 0;
+
+    & img {
+      width: 20px;
+      height: 20px;
+      cursor: pointer;
+    }
+  }
+
+  &__input {
+    width: 100%;
+    position: relative;
+
+    & button {
+      color: $very-dark-blue;
+      text-align: center;
+      font-size: 1.2rem;
+
+      & :hover {
+        font-size: 2rem;
+      }
+    }
+    &--default {
+      border: none;
+      background-color: transparent;
+      outline: none;
+      cursor: pointer;
+      position: absolute;
+      top: 10px;
+      width: 18px;
+      left: 15px;
+      height: 18px;
+      display: grid;
+      place-items: center;
+    }
+
+    &--check {
+      border: none;
+      background-image: linear-gradient(
+        to right,
+        hsl(192, 100%, 67%),
+        hsl(280, 87%, 65%)
+      );
+      display: grid;
+      place-items: center;
+    }
+    & input {
+      padding: 1rem 1.3rem 1rem 3rem;
+      width: 100%;
+      border-radius: 5px;
+      outline: none;
+      border: none;
+      font-family: 'ZCOOL XiaoWei', serif;
+    }
+  }
+  &__todolist {
+    & ul {
+      width: 100%;
+      height: 60vh;
+      margin-top: 1.5rem;
+      list-style-type: none;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 15px 20px rgba($color: #000000, $alpha: 0.2);
+      position: relative;
+
+      & li {
+        padding: 1.3rem 0rem;
+        position: relative;
+        display: flex;
+
+        & span {
+          font-size: 0.75rem;
+          font-family: Arial, Helvetica, sans-serif;
+          cursor: pointer;
+          display: inline-block;
+          margin-left: 3rem;
+          font-family: 'ZCOOL XiaoWei', serif;
+        }
+
+        & > img {
+          cursor: pointer;
+          position: absolute;
+          height: 13px;
+          width: 13px;
+          right: 20px;
+        }
+      }
+    }
+
+    &--default {
+      display: grid;
+      place-items: center;
+      position: absolute;
+      left: 18px;
+      top: 18px;
+      width: 18px;
+      height: 18px;
+      cursor: pointer;
+    }
+
+    &--footer {
+      padding: 1rem 0.1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: absolute;
+      bottom: 120px;
+      left: 600px;
+      & div {
+        margin-left: 0.4rem;
+        display: flex;
+        & span {
+          color: $dark-grayis-blue;
+          font-size: 0.7rem;
+          display: inline-block;
+          font-weight: 700;
+          margin: 0 1rem;
+          cursor: pointer;
+        }
+      }
+      & > span {
+        font-size: 0.7rem;
+        color: $dark-grayis-blue;
+      }
+
+      & span:last-child {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .app {
+    width: 80%;
+  }
+}
+
+// border 1px
+
+.b-1 {
+  border: 1px solid rgba($color: #000000, $alpha: 0.2);
+  border-radius: 50%;
+  // border-image-source: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+}
+.checkImage {
+  opacity: 0;
+}
+.border-bottom-1 {
+  border-bottom: 1px solid rgba($color: #000000, $alpha: 0.1);
+}
+// light theme
+.light-theme {
+  background-color: $very-light-gray;
+}
+// dark theme
+.dark-theme {
+  background-color: $very-dark-blue;
+}
+
+.dark-theme-check-hidden {
+  visibility: hidden;
+}
