@@ -1,0 +1,70 @@
+@use "variables" as var;
+.dashboard {
+  @media screen and (min-width: 698px) {
+    display: flex;
+  }
+  &__header {
+    margin-top: 2rem;
+    background: var.$dark-blue;
+    border-radius: var.$border-radius;
+    overflow: hidden;
+    padding-bottom: 1rem;
+    @media screen and (min-width: 698px) {
+      display: flex;
+      flex-direction: column;
+      margin: 1rem 0;
+      max-width: 240px;
+    }
+  }
+  .toggle {
+    display: flex;
+    justify-content: space-around;
+    @media screen and (min-width: 698px) {
+      flex-direction: column;
+    }
+
+    button {
+      @media screen and (min-width: 698px) {
+        text-align: left;
+        margin: 0.5rem 2rem;
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+
+.role {
+  display: flex;
+  background-color: var.$blue;
+  border-radius: var.$border-radius;
+  padding: 1rem;
+  margin-bottom: 1rem;
+
+  @media screen and (min-width: 698px) {
+    flex-direction: column;
+    height: 70%;
+  }
+  .name {
+    font-size: 1.5rem;
+    font-weight: 300;
+    @media screen and (min-width: 698px) {
+      font-size: 2.5rem;
+      width: 50%;
+      line-height: 1;
+    }
+  }
+
+  img {
+    border: 2px solid white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+    @media screen and (min-width: 698px) {
+      margin-bottom: 2rem;
+    }
+  }
+  .detail p:first-child {
+    color: var.$pale-blue;
+  }
+}

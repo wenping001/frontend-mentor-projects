@@ -1,0 +1,92 @@
+@use "variables" as var;
+
+@media screen and (min-width: 698px) {
+  .dashboard__list {
+    margin-left: 2rem;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem 2rem;
+  }
+}
+
+.dashboard__item {
+  margin: 1rem 0;
+  border-radius: var.$border-radius;
+  padding-top: 2.2rem;
+  overflow: hidden;
+  position: relative;
+  min-width: 320px;
+  .deco-icon {
+    width: 70px;
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    z-index: 0;
+  }
+  .content {
+    position: relative;
+    background-color: var.$dark-blue;
+    // border-radius: var.$border-radius;
+    border-top-left-radius: var.$border-radius;
+    border-top-right-radius: var.$border-radius;
+    padding: 1rem;
+    bottom: -20px;
+
+    section {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      &:nth-last-child(1) {
+        margin-bottom: 1rem;
+        @media screen and (min-width: 698px) {
+          align-items: flex-start;
+          flex-direction: column;
+          text-align: left;
+
+          .hours {
+            font-size: 3rem;
+          }
+        }
+      }
+    }
+
+    .ellipsis {
+      cursor: pointer;
+    }
+
+    .hours {
+      font-size: 2rem;
+      font-weight: 300;
+    }
+
+    .last-week-hrs {
+      color: var.$pale-blue;
+    }
+  }
+}
+
+.work-bg {
+  background-color: var.$light-red-work;
+}
+
+.play-bg {
+  background-color: var.$soft-blue-play;
+}
+
+.study-bg {
+  background-color: var.$light-red-study;
+}
+
+.exercise-bg {
+  background-color: var.$lime-green-exercice;
+}
+
+.social-bg {
+  background-color: var.$violet-social;
+}
+
+.self-care-bg {
+  background-color: var.$soft-orange-self-care;
+}
