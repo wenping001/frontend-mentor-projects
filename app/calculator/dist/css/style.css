@@ -1,0 +1,47 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Spartan", sans-serif;
+  font-size: 32px;
+}
+
+.container {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+.app {
+  max-width: 800px;
+  width: 35%;
+  min-width: 365px;
+}
+
+.keypad {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+}
+.keypad .key {
+  text-align: center;
+}
+.keypad .reset,
+.keypad .equal {
+  grid-column: span 2;
+}
+
+.header {
+  display: flex;
+}
+
+.screen {
+  text-align: right;
+}
+
+/*# sourceMappingURL=style.css.map */
